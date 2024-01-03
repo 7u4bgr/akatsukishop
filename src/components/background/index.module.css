@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background: #040a15;
+  padding-bottom: 20px;
+}
+.background .control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.background .control .textcontrol {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.background .control .textcontrol .name {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.background .control .textcontrol .name h2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  font-family: "Bungee Spice", sans-serif;
+  font-size: 50px;
+}
+.background .control .textcontrol .name h2 svg {
+  background-color: white;
+  border-radius: 30px;
+  padding: 4px;
+}
+.background .control .textcontrol .name p {
+  font-family: "Tektur", sans-serif;
+  color: white;
+  font-size: 20px;
+}
+.background .control .textcontrol .overview p {
+  color: var(--paragraph, #a7a9be);
+  text-align: justify;
+  /* paragraph */
+  font-family: "Tektur", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.background .control .textcontrol .button {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.background .control .textcontrol .button button {
+  cursor: pointer;
+  color: var(--button-text, #fffffe);
+  font-family: "Tektur", sans-serif;
+  border-radius: 10px;
+  padding: 5px 20px;
+  background: var(--primary, #6246EA);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  border: none;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.background .control .textcontrol .button button img {
+  width: 50px;
+}
+.background .control .img {
+  padding-top: 30px;
+  background-color: #E36F00;
+  border-radius: 50%;
+}
+.background .control .img img {
+  width: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .background {
+    padding-bottom: 40px;
+  }
+  .background .control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .background .control .textcontrol .name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .background .control .textcontrol .name h2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .background .control .textcontrol .overview p {
+    width: 50%;
+  }
+  .background .control .textcontrol .button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .background .control .img img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=index.module.css.map */
